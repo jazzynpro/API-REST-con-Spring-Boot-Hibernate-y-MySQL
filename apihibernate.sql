@@ -15,3 +15,5 @@ select
         pelicula p1_0;
     where
         p1_0.genero like '%on%';
+        
+        select * from pelicula;
