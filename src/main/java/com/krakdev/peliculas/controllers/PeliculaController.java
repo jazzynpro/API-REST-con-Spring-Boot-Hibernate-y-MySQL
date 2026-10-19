@@ -91,7 +91,7 @@ public ResponseEntity<?> eliminar(@PathVariable Long id) {
     }
 }
 
-@GetMapping("/{genero}")
+@GetMapping("/genero/{genero}")
 public ResponseEntity<?> buscarPorGenero(@PathVariable String genero){
 	try {
 		List<Pelicula> peliculas = servicio.buscarPorGenero(genero);
@@ -105,7 +105,7 @@ public ResponseEntity<?> buscarPorGenero(@PathVariable String genero){
 }
 
 
-@GetMapping("/{disponible}")
+@GetMapping("/disponible/{disponible}")
 public ResponseEntity<?> buscarPorDisponible(@PathVariable boolean disponible){
 	try {
 		List<Pelicula> peliculas = servicio.buscarPorDisponible(disponible);
